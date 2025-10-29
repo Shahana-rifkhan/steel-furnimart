@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Steel Furnimart</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/logo.jpg" alt="Logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <div class="nav-item dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Feature</a>
+                                <a href="product.html" class="dropdown-item active">Our Product</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                          <a href="tel:+94777673570">
+                            <span class="text-primary fw-semibold">Call Us: +94 777 673 570</span>
+                          </a>
+                          <small class="text-muted">Mon–Sat  |  8.30 AM – 6.00 PM</small>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                      <a href="contact.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">
+                        Get a Quote
+                      </a>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Products</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-primary">Product</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Products Start -->
+<div class="container-fluid product py-5">
+    <div class="container py-5">
+  
+      <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 900px;">
+        <h4 class="text-uppercase text-primary">Our Products</h4>
+        <h1 class="display-5 text-capitalize mb-3">Domestic & Corporate Steel Furniture</h1>
+        <p class="mb-0">Browse our most-requested models. Tap “View Photos” to open a gallery, or message us on WhatsApp for specs, pricing, and customization.</p>
+      </div>
+  
+      <!-- Category Tabs -->
+      <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="productTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4" id="domestic-tab" data-bs-toggle="pill" data-bs-target="#domestic" type="button" role="tab">Domestic</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" id="corporate-tab" data-bs-toggle="pill" data-bs-target="#corporate" type="button" role="tab">Corporate / Co-operative</button>
+        </li>
+      </ul>
+  
+      <div class="tab-content" id="productTabContent">
+        <!-- Domestic -->
+        <div class="tab-pane fade show active" id="domestic" role="tabpanel" aria-labelledby="domestic-tab">
+          <div class="row g-4">
+  
+            <!-- Pantry Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/pantry-cupboard-1.jpg" class="card-img-top" alt="Pantry Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Pantry Cupboard</h5>
+                  <p class="card-text small text-muted">Moisture-resistant steel carcass with adjustable shelves and soft-close doors—ideal for modern kitchens.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm"
+                            data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Pantry Cupboard"
+                            data-images='["img/products/pantry-cupboard-1.jpg","img/products/pantry-cupboard-2.jpg","img/products/pantry-cupboard-3.jpg"]'>
+                      View Photos
+                    </button>
+                    <a class="btn btn-primary btn-sm"
+                       href="https://wa.me/94777673570?text=Hello%20Steel%20Furnimart,%20I%E2%80%99m%20interested%20in%20the%20Pantry%20Cupboard.%20Please%20share%20price%20and%20lead%20time."
+                       target="_blank" rel="noopener">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Kitchen Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/kitchen-cupboard-1.jpg" class="card-img-top" alt="Kitchen Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Kitchen Cupboard</h5>
+                  <p class="card-text small text-muted">Powder-coated finish with pull-out trays and anti-rust hardware for heavy daily use.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Kitchen Cupboard"
+                            data-images='["img/products/kitchen-cupboard-1.jpg","img/products/kitchen-cupboard-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Kitchen%20Cupboard%20details%20please%20( sizes,%20colors,%20price )." target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Wardrobes -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/wardrobe-1.jpg" class="card-img-top" alt="Wardrobes">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Wardrobes</h5>
+                  <p class="card-text small text-muted">Single/Double/Triple door wardrobes with mirror options, hanging rails, and secure locks.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Wardrobes"
+                            data-images='["img/products/wardrobe-1.jpg","img/products/wardrobe-2.jpg","img/products/wardrobe-3.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Wardrobe%20models%20and%20prices%20please." target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Junior Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.25s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/junior-cupboard-1.jpg" class="card-img-top" alt="Junior Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Junior Cupboard</h5>
+                  <p class="card-text small text-muted">Child-safe edges, bright finishes, and modular shelves for kids’ rooms.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-target="#productModal" data-bs-toggle="modal"
+                            data-title="Junior Cupboard"
+                            data-images='["img/products/junior-cupboard-1.jpg","img/products/junior-cupboard-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Junior%20Cupboard%20inquiry" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Baby Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/baby-cupboard-1.jpg" class="card-img-top" alt="Baby Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Baby Cupboard</h5>
+                  <p class="card-text small text-muted">Compact storage with smooth drawers and washable interiors for nurseries.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Baby Cupboard"
+                            data-images='["img/products/baby-cupboard-1.jpg","img/products/baby-cupboard-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Baby%20Cupboard%20quote%20request" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Single Door Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.35s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/single-door-cupboard-1.jpg" class="card-img-top" alt="Single Door Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Single Door Cupboard</h5>
+                  <p class="card-text small text-muted">Slim design for tight spaces; adjustable shelves and secure locking.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Single Door Cupboard"
+                            data-images='["img/products/single-door-cupboard-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Single%20Door%20Cupboard%20details" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Gas Cooker Stand -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/gas-cooker-stand-1.jpg" class="card-img-top" alt="Gas Cooker Stand">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Gas Cooker Stand</h5>
+                  <p class="card-text small text-muted">Sturdy frame with heat-resistant top and anti-skid feet; under-shelf storage.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Gas Cooker Stand"
+                            data-images='["img/products/gas-cooker-stand-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Gas%20Cooker%20Stand%20inquiry" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Steel Beds -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.45s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/steel-bed-1.jpg" class="card-img-top" alt="Steel Beds">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Steel Beds</h5>
+                  <p class="card-text small text-muted">Heavy-gauge frames with silent joints; single/double sizes and bunk options.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Steel Beds"
+                            data-images='["img/products/steel-bed-1.jpg","img/products/steel-bed-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Steel%20Beds%20( single/double/bunk )%20price%20please." target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Library Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/library-cupboard-1.jpg" class="card-img-top" alt="Library Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Library Cupboard</h5>
+                  <p class="card-text small text-muted">Glass-front or solid doors, adjustable shelves, anti-tilt design for safety.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Library Cupboard"
+                            data-images='["img/products/library-cupboard-1.jpg","img/products/library-cupboard-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Library%20Cupboard%20details" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Office Table -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.55s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/office-table-1.jpg" class="card-img-top" alt="Office Table">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Office Table</h5>
+                  <p class="card-text small text-muted">Ergonomic steel frame tables with cable management and lockable drawers.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Office Table"
+                            data-images='["img/products/office-table-1.jpg","img/products/office-table-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Office%20Table%20sizes%20and%20colors" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Book Shelf -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/bookshelf-1.jpg" class="card-img-top" alt="Book Shelf">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Book Shelf</h5>
+                  <p class="card-text small text-muted">Open or closed shelving with anti-sag reinforcements for heavy loads.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Book Shelf"
+                            data-images='["img/products/bookshelf-1.jpg","img/products/bookshelf-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Book%20Shelf%20options%20please" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- White Board -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.65s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/whiteboard-1.jpg" class="card-img-top" alt="White Board">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">White Board</h5>
+                  <p class="card-text small text-muted">Magnetic enamel surface with sturdy aluminum frame; wall or stand mounting.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="White Board"
+                            data-images='["img/products/whiteboard-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=White%20Board%20sizes%20and%20price" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Ironing Cabinet Table -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/ironing-cabinet-1.jpg" class="card-img-top" alt="Ironing Cabinet Table">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Ironing Cabinet Table</h5>
+                  <p class="card-text small text-muted">Fold-away ironing surface with ventilated stand and concealed storage.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Ironing Cabinet Table"
+                            data-images='["img/products/ironing-cabinet-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Ironing%20Cabinet%20Table%20details" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Towel Rack -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.75s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/towel-rack-1.jpg" class="card-img-top" alt="Towel Rack">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Towel Rack</h5>
+                  <p class="card-text small text-muted">Wall/stand options with anti-corrosion coating for bathrooms and kitchens.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Towel Rack"
+                            data-images='["img/products/towel-rack-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Towel%20Rack%20inquiry" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <!-- Corporate / Co-operative -->
+        <div class="tab-pane fade" id="corporate" role="tabpanel" aria-labelledby="corporate-tab">
+          <div class="row g-4">
+  
+            <!-- Workmen Lockers -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/locker-1.jpg" class="card-img-top" alt="Workmen Lockers">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Workmen Lockers</h5>
+                  <p class="card-text small text-muted">Multi-door lockers with ventilation slots and cam locks; 6/9/12-door banks.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Workmen Lockers"
+                            data-images='["img/products/locker-1.jpg","img/products/locker-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Workmen%20Lockers%20sizes%20and%20bulk%20pricing" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Key Holder Boxes -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.15s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/key-box-1.jpg" class="card-img-top" alt="Key Holder Boxes">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Key Holder Boxes</h5>
+                  <p class="card-text small text-muted">Wall-mounted key cabinets with indexed hooks and secure locking.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Key Holder Boxes"
+                            data-images='["img/products/key-box-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Key%20Holder%20Boxes%20capacity%20and%20price" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Bunk Beds -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/bunk-bed-1.jpg" class="card-img-top" alt="Bunk Beds">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Bunk Beds</h5>
+                  <p class="card-text small text-muted">Industrial-grade bunk frames for hostels and staff housing; safety rails included.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Bunk Beds"
+                            data-images='["img/products/bunk-bed-1.jpg","img/products/bunk-bed-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Bunk%20Beds%20bulk%20order%20details" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Office Cupboard -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.25s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/office-cupboard-1.jpg" class="card-img-top" alt="Office Cupboard">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Office Cupboard</h5>
+                  <p class="card-text small text-muted">Heavy-duty storage for files and equipment with reinforced shelves.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Office Cupboard"
+                            data-images='["img/products/office-cupboard-1.jpg","img/products/office-cupboard-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Office%20Cupboard%20quote%20request" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Filing Cabinet -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/filing-cabinet-1.jpg" class="card-img-top" alt="Filing Cabinet">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Filing Cabinet</h5>
+                  <p class="card-text small text-muted">2/3/4-drawer cabinets with anti-tilt mechanism and central locking.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Filing Cabinet"
+                            data-images='["img/products/filing-cabinet-1.jpg","img/products/filing-cabinet-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Filing%20Cabinet%20(2/3/4%20drawer)%20prices" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Notice Board -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.35s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/notice-board-1.jpg" class="card-img-top" alt="Notice Board">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Notice Board</h5>
+                  <p class="card-text small text-muted">Cork/fabric boards with lockable glass door options for corridors and reception.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Notice Board"
+                            data-images='["img/products/notice-board-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Notice%20Board%20sizes%20and%20lead%20time" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Flip Chart Stand -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/flip-chart-stand-1.jpg" class="card-img-top" alt="Flip Chart Stand">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Flip Chart Stand</h5>
+                  <p class="card-text small text-muted">Tripod/magnetic stands with adjustable height and pen tray for meetings.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Flip Chart Stand"
+                            data-images='["img/products/flip-chart-stand-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Flip%20Chart%20Stand%20details" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Hostel Furniture -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.45s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/hostel-furniture-1.jpg" class="card-img-top" alt="Hostel Furniture">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Hostel Furniture</h5>
+                  <p class="card-text small text-muted">Complete packages: bunk beds, lockers, study tables, and seating for dorms.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Hostel Furniture"
+                            data-images='["img/products/hostel-furniture-1.jpg","img/products/hostel-furniture-2.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Hostel%20Furniture%20package%20quote" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Book Rack -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/book-rack-1.jpg" class="card-img-top" alt="Book Rack">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Book Rack</h5>
+                  <p class="card-text small text-muted">Steel racking for libraries and archives; single/double-sided bays.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Book Rack"
+                            data-images='["img/products/book-rack-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=Book%20Rack%20dimensions%20and%20pricing" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- First Aid Box -->
+            <div class="col-12 col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay="0.55s">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img/products/first-aid-box-1.jpg" class="card-img-top" alt="First Aid Box">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">First Aid Box</h5>
+                  <p class="card-text small text-muted">Wall-mount steel cabinet with shelves and clear labeling for workplaces.</p>
+                  <div class="d-flex gap-2">
+                    <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="First Aid Box"
+                            data-images='["img/products/first-aid-box-1.jpg"]'>View Photos</button>
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/94777673570?text=First%20Aid%20Box%20bulk%20order%20info" target="_blank">WhatsApp Inquiry</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <!-- /Corporate -->
+      </div>
+    </div>
+  </div>
+  <!-- Products End -->
+  
+  <!-- Product Gallery Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalTitle">Product Photos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="productCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner" id="productCarouselInner"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a id="modalWhatsapp" class="btn btn-primary rounded-pill" target="_blank" rel="noopener">WhatsApp This Product</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Build gallery dynamically from data attributes
+    const productModal = document.getElementById('productModal');
+    productModal.addEventListener('show.bs.modal', function (event) {
+      const btn = event.relatedTarget;
+      const title = btn.getAttribute('data-title') || 'Product Photos';
+      const imgs = JSON.parse(btn.getAttribute('data-images') || '[]');
+  
+      // Set title
+      document.getElementById('productModalTitle').textContent = title;
+  
+      // Build carousel
+      const inner = document.getElementById('productCarouselInner');
+      inner.innerHTML = '';
+      imgs.forEach((src, i) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-item' + (i === 0 ? ' active' : '');
+        div.innerHTML = `<img src="${src}" class="d-block w-100" alt="${title} image ${i+1}" style="object-fit:cover; max-height:70vh;">`;
+        inner.appendChild(div);
+      });
+  
+      // WhatsApp CTA in modal
+      const wa = document.getElementById('modalWhatsapp');
+      const msg = encodeURIComponent(`Hello Steel Furnimart, I'm interested in: ${title}. Please share specs, colors and price.`);
+      wa.href = `https://wa.me/94777673570?text=${msg}`;
+    });
+  </script>
+</body>  
+
+
+        <!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+  
+      <!-- Top Row: Subscribe + Social -->
+<div class="row g-5 mb-5 align-items-center">
+    <div class="col-lg-7">
+      <!-- Formspree Subscription Form -->
+      <form action="https://formspree.io/f/your_form_id_here" method="POST" class="position-relative mx-auto">
+        <input 
+          class="form-control rounded-pill w-100 py-3 ps-4 pe-5" 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email to subscribe" 
+          required>
+        <button 
+          type="submit" 
+          class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  
+    <div class="col-lg-5">
+      <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.facebook.com/steelfurnimart" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.linkedin.com/company/steelfurnimart" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.instagram.com/steelfurnimart" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="https://www.youtube.com/@steelfurnimart" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  
+      <!-- Main Footer Content -->
+      <div class="row g-5">
+        <!-- Brand/About -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <h3 class="text-white mb-4">
+                  <i class="fas fa-industry text-primary me-3"></i>Steel Furnimart
+                </h3>
+                <p class="mb-3">
+                  Since 1987, Steel Furnimart has designed and manufactured durable, elegant steel furniture for homes,
+                  offices, and institutions across Sri Lanka. Quality, reliability, and timely delivery are at the heart of everything we do.
+                </p>
+              </div>
+          
+              <!-- Formspree Subscription Form -->
+              <form action="https://formspree.io/f/your_form_id_here" method="POST" class="position-relative">
+                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" 
+                       type="email" name="email" 
+                       placeholder="Enter your email" required>
+                <button type="submit" 
+                        class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+          
+  
+        <!-- Quick Links -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href="products.html"><i class="fas fa-angle-right me-2"></i> Products</a>
+            <a href="custom-fabrication.html"><i class="fas fa-angle-right me-2"></i> Custom Fabrication</a>
+            <a href="delivery-installation.html"><i class="fas fa-angle-right me-2"></i> Delivery &amp; Installation</a>
+            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+            <a href="terms.html"><i class="fas fa-angle-right me-2"></i> Terms &amp; Conditions</a>
+          </div>
+        </div>
+  
+        <!-- Business Hours -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Business Hours</h4>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Monday – Saturday:</h6>
+              <p class="text-white mb-0">08:30 AM – 06:00 PM</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Sunday:</h6>
+              <p class="text-white mb-0">Closed</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Public Holidays:</h6>
+              <p class="text-white mb-0">Please call to confirm</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <a href="https://maps.google.com/?q=No.+55,+Paranawatta+Road,+Off+Kerawalapitiya+Road,+Hendala,+Wattala,+Sri+Lanka" target="_blank">
+              <i class="fa fa-map-marker-alt me-2"></i> No. 55, Paranawatta Road, Off Kerawalapitiya Road, Hendala, Wattala.
+            </a>
+            <a href="mailto:info@steelfurnimart.com"><i class="fas fa-envelope me-2"></i> info@steelfurnimart.com</a>
+            <a href="tel:+94777673570"><i class="fas fa-phone me-2"></i> +94 777 673 570</a>
+            <a href="https://www.steelfurnimart.com" target="_blank"><i class="fas fa-globe me-2"></i> www.steelfurnimart.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+  
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Steel Furnimart</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "qlsolution.us". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://qlsolution.us/">Quantum Leap Solution</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

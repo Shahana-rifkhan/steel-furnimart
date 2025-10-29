@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Steel Furnimart</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/logo.jpg" alt="Logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Feature</a>
+                                <a href="product.html" class="dropdown-item">Our Product</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                          <a href="tel:+94777673570">
+                            <span class="text-primary fw-semibold">Call Us: +94 777 673 570</span>
+                          </a>
+                          <small class="text-muted">Mon–Sat  |  8.30 AM – 6.00 PM</small>
+                        </div>
+                      </div>
+                      
+                      
+                      <a href="contact.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">
+                        Get a Quote
+                      </a>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-primary">Contact</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                            <h4 class="text-uppercase text-primary">Let’s Connect</h4>
+                            <h1 class="display-3 text-capitalize mb-3">Send Your Message</h1>
+                            <p class="mb-0">
+                                Have a query about our products, prices, or custom orders? Use the form below and our team will reach out promptly.
+                              </p>
+                            </div>
+                            <form id="contactForm" action="https://formspree.io/f/your_form_id" method="POST" novalidate>
+                                <div id="formAlert" class="alert d-none" role="alert"></div>
+                              
+                                <div class="row g-4">
+                                  <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                      <input type="text" class="form-control border-0" id="name" name="name" placeholder="Your Name" required>
+                                      <label for="name">Your Name *</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                      <input type="email" class="form-control border-0" id="email" name="email" placeholder="Your Email" required>
+                                      <label for="email">Your Email *</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                      <input type="tel" class="form-control border-0" id="phone" name="phone" placeholder="Phone">
+                                      <label for="phone">Your Phone</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                      <input type="text" class="form-control border-0" id="subject" name="subject" placeholder="Subject">
+                                      <label for="subject">Subject</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                    <div class="form-floating">
+                                      <textarea class="form-control border-0" placeholder="Leave a message here" id="message" name="message" style="height: 175px" required></textarea>
+                                      <label for="message">Message *</label>
+                                    </div>
+                                  </div>
+                              
+                                  <!-- Hidden Formspree metadata -->
+                                  <input type="hidden" name="_subject" value="New inquiry from Steel Furnimart website">
+                                  <input type="hidden" name="_template" value="table">
+                                  <input type="text" name="_gotcha" class="d-none">
+                              
+                                  <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                  </div>
+                                </div>
+                              </form>
+                              
+                              <!-- JS for Formspree -->
+                              <script>
+                              (function () {
+                                const form = document.getElementById('contactForm');
+                                const alertEl = document.getElementById('formAlert');
+                                if (!form) return;
+                              
+                                form.addEventListener('submit', async function (e) {
+                                  e.preventDefault();
+                                  alertEl.classList.add('d-none');
+                              
+                                  const formData = new FormData(form);
+                                  const action = form.getAttribute('action');
+                              
+                                  try {
+                                    const res = await fetch(action, {
+                                      method: 'POST',
+                                      headers: { 'Accept': 'application/json' },
+                                      body: formData
+                                    });
+                              
+                                    if (res.ok) {
+                                      form.reset();
+                                      alertEl.className = 'alert alert-success';
+                                      alertEl.textContent = '✅ Thank you! Your message has been sent successfully.';
+                                      alertEl.classList.remove('d-none');
+                                    } else {
+                                      alertEl.className = 'alert alert-danger';
+                                      alertEl.textContent = '⚠️ Something went wrong. Please try again.';
+                                      alertEl.classList.remove('d-none');
+                                    }
+                                  } catch (err) {
+                                    alertEl.className = 'alert alert-danger';
+                                    alertEl.textContent = '🚫 Network error. Please check your connection.';
+                                    alertEl.classList.remove('d-none');
+                                  }
+                                });
+                              })();
+                              </script>
+                              
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Address</h4>
+                                        <p class="mb-0">
+                                            Steel Furnimart<br>
+                                            No. 36/10, Paranawatta Road,<br>
+                                            Kerawalapitiya, Hendala – Wattala, Sri Lanka
+                                          </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fas fa-envelope fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Mail Us</h4>
+                                        <a href="mailto:info@steelfurnimart.com" class="text-decoration-none">info@steelfurnimart.com</a>
+                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="d-inline-flex rounded bg-white w-100 p-4">
+                                    <i class="fa fa-phone-alt fa-2x text-secondary me-4"></i>
+                                    <div>
+                                        <h4>Telephone</h4>
+                                        <a href="tel:+94777673570" class="text-decoration-none">+94 777 673 570</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="h-100 overflow-hidden">
+                                    <iframe class="w-100 rounded" style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+  
+      <!-- Top Row: Subscribe + Social -->
+<div class="row g-5 mb-5 align-items-center">
+    <div class="col-lg-7">
+      <!-- Formspree Subscription Form -->
+      <form action="https://formspree.io/f/your_form_id_here" method="POST" class="position-relative mx-auto">
+        <input 
+          class="form-control rounded-pill w-100 py-3 ps-4 pe-5" 
+          type="email" 
+          name="email" 
+          placeholder="Enter your email to subscribe" 
+          required>
+        <button 
+          type="submit" 
+          class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  
+    <div class="col-lg-5">
+      <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.facebook.com/steelfurnimart" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.linkedin.com/company/steelfurnimart" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-3" href="https://www.instagram.com/steelfurnimart" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="btn btn-secondary btn-md-square rounded-circle me-0" href="https://www.youtube.com/@steelfurnimart" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  
+      <!-- Main Footer Content -->
+      <div class="row g-5">
+        <!-- Brand/About -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <div class="footer-item">
+                <h3 class="text-white mb-4">
+                  <i class=""></i>Steel Furnimart
+                </h3>
+                <p class="mb-3">
+                  Since 1987, Steel Furnimart has designed and manufactured durable, elegant steel furniture for homes,
+                  offices, and institutions across Sri Lanka. Quality, reliability, and timely delivery are at the heart of everything we do.
+                </p>
+              </div>
+          
+              <!-- Formspree Subscription Form -->
+              <form action="https://formspree.io/f/your_form_id_here" method="POST" class="position-relative">
+                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" 
+                       type="email" name="email" 
+                       placeholder="Enter your email" required>
+                <button type="submit" 
+                        class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
+          
+  
+        <!-- Quick Links -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+            <a href="products.html"><i class="fas fa-angle-right me-2"></i> Products</a>
+            <a href="custom-fabrication.html"><i class="fas fa-angle-right me-2"></i> Custom Fabrication</a>
+            <a href="delivery-installation.html"><i class="fas fa-angle-right me-2"></i> Delivery &amp; Installation</a>
+            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+            <a href="terms.html"><i class="fas fa-angle-right me-2"></i> Terms &amp; Conditions</a>
+          </div>
+        </div>
+  
+        <!-- Business Hours -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Business Hours</h4>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Monday – Saturday:</h6>
+              <p class="text-white mb-0">08:30 AM – 06:00 PM</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Sunday:</h6>
+              <p class="text-white mb-0">Closed</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-muted mb-0">Public Holidays:</h6>
+              <p class="text-white mb-0">Please call to confirm</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <a href="https://maps.google.com/?q=No.+55,+Paranawatta+Road,+Off+Kerawalapitiya+Road,+Hendala,+Wattala,+Sri+Lanka" target="_blank">
+              <i class="fa fa-map-marker-alt me-2"></i> No. 55, Paranawatta Road, Off Kerawalapitiya Road, Hendala, Wattala.
+            </a>
+            <a href="mailto:info@steelfurnimart.com"><i class="fas fa-envelope me-2"></i> info@steelfurnimart.com</a>
+            <a href="tel:+94777673570"><i class="fas fa-phone me-2"></i> +94 777 673 570</a>
+            <a href="https://www.steelfurnimart.com" target="_blank"><i class="fas fa-globe me-2"></i> www.steelfurnimart.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+  
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Steel Furnimart</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "qlsolution.us". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://qlsolution.us/">Quantum Leap Solution</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
